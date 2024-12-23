@@ -1,0 +1,19 @@
+high psnr value shows better quality of image
+
+ssim is between the 1 and -1, and 1 shows same as the priginal image , here check luminal contrast and structure
+
+less mse show s better quality image
+
+
+5.1.1 Efficiency vs. Quality:
+Filters such as Gaussian and Median are efficient in runtime and memory use, suited to real-time applications but offering moderate noise reduction quality. In contrast, the Bilateral and NLM filters, particularly in a hybrid setup, provide superior noise reduction at the cost of increased runtime and memory usage.
+5.1.2 Applicability of Hybrid Filtering:
+The hybrid filter is most effective in high-quality offline processing, especially where images are subjected to various noise types. Its ability to address complex noise patterns suggests it is ideal for applications that prioritize quality over processing speed, such as medical imaging or digital archiving.
+
+
+
+
+    'A': aussian
+    'B': median
+    'C': bilateral
+    'D': non_local_means
